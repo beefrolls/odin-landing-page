@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: pink;
+    width: 100%;
+}
+
+.panel1,
+.panel2,
+.panel3,
+.panel4,
+.footer {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.panel1 {
+    background-color: rgb(73, 0, 162);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 100%;
+    margin: 20px;
+}
+
+.header > .left {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: xx-large;
+    margin-left: 100px;
+    color: rgb(10, 251, 10);
+}
+
+.header > .right {
+    margin-right: 100px;
+}
+
+ul {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin-top: 0;
+}
+
+a {
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    width: 100px;
+    height: auto;
+    background-color: black;
+    transition: 1s;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+
+.body > .left {
+    margin-left: 100px;
+    width: 500px;
+    text-align: justify;
+}
+
+.title {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: large;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button > button {
+    width: 150px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: greenyellow;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    border-color: black;
+}
+
+.button > button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+}
+
+.body > .right {
+    margin-right: 100px;
+    flex: wrap;
+    align-items: flex-end;
+}
+
+.img-holder > img {
+    display: flex;
+    flex-basis: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.img-holder > .text {
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    justify-content: flex-end;
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+}
+
+.panel2 {
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.header2,
+.img-holder2 {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 {
+    margin: 60px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    font-size: x-large;
+    text-decoration: underline;
+    color: white;
+}
+
+.img-holder2 {
+    height: 200px;
+    width: 300px;
+    gap: 60px;
+    flex: wrap;
+    margin-bottom: 60px;
+}
+
+.img > img {
+    display: flex;
+    flex-basis: 100%;
+    width: 110px;
+    height: auto;
+    justify-content: center;
+    border-style: outset;
+    padding: 10px;
+    background-color: white;
+}
+
+.img > text {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-stretch: condensed;
+}
+
+.panel3 {
+    background-image: url(images/panel3/1.gif);
+}
+
+.quote  {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.quote-text {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    max-width: 600px;
+    flex-basis: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+
+.author {
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 10px;
+    margin-left: 400px;
+    justify-content: center;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    color: rgb(10, 251, 10);
+    font-size: 30px;
+}
+
+.panel4 {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    background-color: greenyellow;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    align-items: center;
+    margin: 50px;
+}
+
+.action > .left {
+    max-width: 350px;
+}
+
+.calltoaction {
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.ctadescription {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: small;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    border-color: black;
+    border-style: double;
+    color: black;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+button:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer {
+    background-color: rgb(73, 0, 162);
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.me {
+    font-family: 'Rubik Glitch', cursive;
+    color: rgb(10, 251, 10);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
